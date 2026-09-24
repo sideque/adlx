@@ -43,10 +43,13 @@ export default function Navbar() {
         {/* Brand Mark */}
         <a
           href="#"
-          className="font-serif text-2xl md:text-[1.75rem] tracking-wider text-ink font-normal flex items-center gap-3 group"
+          className="flex items-center group"
         >
-          <span>ADLX</span>
-          <span className="h-1.5 w-1.5 rounded-full bg-bronze opacity-80 group-hover:scale-125 transition-transform duration-300" />
+          <img
+            src="/adlxlogo.png"
+            alt="ADLX"
+            className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+          />
         </a>
 
         {/* Desktop Navigation */}
