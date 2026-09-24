@@ -25,46 +25,50 @@
 html, body {
   overflow-x: hidden;
   max-width: 100vw;
+  background-color: #0C0C0D;
+  color: #F7F5F0;
 }
 
 body {
-  background-color: #F6F2EA;
-  color: #14120F;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: #9C7A45;
-  color: #F6F2EA;
+  background: #C5A880;
+  color: #0C0C0D;
 }
 
 :focus-visible {
-  outline: 1.5px solid #9C7A45;
+  outline: 1.5px solid #C5A880;
   outline-offset: 3px;
 }
 
-/* Custom subtle grain overlay for high-end editorial feel */
-.editorial-grain {
-  background-image: radial-gradient(rgba(20, 18, 15, 0.03) 1px, transparent 1px);
-  background-size: 16px 16px;
+/* Editorial image card overlay gradients */
+.img-gradient-bottom {
+  background: linear-gradient(180deg, rgba(12, 12, 13, 0) 0%, rgba(12, 12, 13, 0.85) 70%, rgba(12, 12, 13, 0.98) 100%);
 }
 
-/* Thin geometric lattice motif — abstracted mashrabiya lines, used sparingly */
-.lattice-motif {
-  background-image:
-    linear-gradient(45deg, currentColor 1px, transparent 1px),
-    linear-gradient(-45deg, currentColor 1px, transparent 1px);
-  background-size: 28px 28px;
+.img-gradient-hero {
+  background: linear-gradient(180deg, rgba(12, 12, 13, 0.65) 0%, rgba(12, 12, 13, 0.45) 40%, rgba(12, 12, 13, 0.95) 100%),
+              radial-gradient(ellipse at center, rgba(12, 12, 13, 0.2) 0%, rgba(12, 12, 13, 0.85) 100%);
+}
+
+.img-gradient-radial {
+  background: radial-gradient(circle at 50% 50%, rgba(12, 12, 13, 0.3) 0%, rgba(12, 12, 13, 0.92) 100%);
 }
 
 .hairline {
-  border-color: #DAD2BF;
+  border-color: #D6CFC4;
 }
 
 .hairline-dark {
-  border-color: #3A362E;
+  border-color: #27272A;
+}
+
+.hairline-bronze {
+  border-color: rgba(197, 168, 128, 0.3);
 }
 
 .container-editorial {
@@ -87,4 +91,22 @@ body {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0C0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
 }

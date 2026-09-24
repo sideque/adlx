@@ -9,24 +9,35 @@ const config: Config = {
     extend: {
       colors: {
         ink: {
-          DEFAULT: "#14120F", // warm near-black
-          soft: "#211E19",
-          line: "#3A362E",
+          DEFAULT: "#0C0C0D", // Deep charcoal near-black
+          soft: "#141416",    // Slightly lighter charcoal
+          card: "#18181B",    // Dark card background
+          line: "#27272A",    // Subtle dark border
+          muted: "#8E8E93",   // Muted gray text
         },
         ivory: {
-          DEFAULT: "#F6F2EA",
-          dim: "#EDE7D9",
-          line: "#DAD2BF",
+          DEFAULT: "#F7F5F0", // Warm ivory off-white
+          pure: "#FFFFFF",
+          dim: "#EFECE6",
+          dark: "#E4DFD5",
+          line: "#D6CFC4",
+        },
+        sand: {
+          DEFAULT: "#C5BEB3",
+          dark: "#A29B8F",
+          muted: "#787268",
         },
         bronze: {
-          DEFAULT: "#9C7A45",
-          dark: "#7A5F35",
-          light: "#B79A63",
+          DEFAULT: "#C5A880", // Muted luxury bronze gold
+          dark: "#A48252",
+          light: "#D8BF9D",
+          hover: "#B89768",
+          glow: "rgba(197, 168, 128, 0.15)",
         },
       },
       fontFamily: {
-        serif: ["var(--font-display)", "Georgia", "serif"],
-        sans: ["var(--font-body)", "system-ui", "sans-serif"],
+        serif: ["var(--font-display)", "Cormorant Garamond", "Georgia", "serif"],
+        sans: ["var(--font-body)", "Inter", "system-ui", "sans-serif"],
       },
       maxWidth: {
         editorial: "1440px",
